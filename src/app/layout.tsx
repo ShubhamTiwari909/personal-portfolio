@@ -5,7 +5,6 @@ import "@mantine/core/styles.css";
 import "animate.css";
 import { MantineProvider } from "@mantine/core";
 import Navbar from "@/components/Navbar";
-import ThemeChanger from "@/components/ThemeChanger";
 import Footer from "@/components/Footer";
 
 const geistSans = Geist({
@@ -35,7 +34,6 @@ export default function RootLayout({
       >
         <MantineProvider>
           <Navbar />
-          <ThemeChanger />
           <main className="mt-20 lg:mt-14">{children}</main>
           <Footer />
         </MantineProvider>

@@ -28,6 +28,26 @@ export default {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      transitionTimingFunction: {
+        slow: "cubic-bezier(.405, 0, .025, 1)",
+      },
+      transitionDuration: {
+        mid: "3s",
+      },
+      keyframes: {
+        slideOutToLeftFull: {
+          '0%': { transform: 'translateX(0)' },
+          '100%': { transform: 'translateX(-100%)' },
+        },
+        slideOutToRightFull: {
+          '0%': { transform: 'translateX(0)' },
+          '100%': { transform: 'translateX(100%)' },
+        },
+      },
+      animation: {
+        'slide-out-to-left-full': 'slideOutToLeftFull 2s ease-out forwards',
+        'slide-out-to-right-full': 'slideOutToRightFull 2s ease-out forwards',
+      },
     },
   },
   plugins: [],

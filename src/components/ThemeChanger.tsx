@@ -36,7 +36,7 @@ const ThemeChanger = () => {
   const theme = store((state) => state.theme);
   const currentTheme = themesStore[theme];
   return (
-    <div className={`fixed top-0 right-1/2 translate-x-2/3 lg:translate-x-1/2 ${currentTheme["bg-200"]} p-2 rounded-xl rounded-t-none flex gap-2 z-[100]`}>
+    <div className={`lg:fixed lg:top-0 lg:right-1/2 lg:translate-x-1/2 ${currentTheme["bg-200"]} px-2 py-1.5 rounded-xl lg:rounded-t-none flex gap-2 justify-center lg:z-[100]`}>
       {themes.map((theme, index) => {
         return (
           <button

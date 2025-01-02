@@ -1,9 +1,10 @@
 "use client";
 import store from "@/hooks/store";
 import { themesStore } from "@/hooks/theme";
-import { Button, Container } from "@mantine/core";
+import { Button, Container, Text } from "@mantine/core";
 import Link from "next/link";
 import React from "react";
+import ThemeChanger from "./ThemeChanger";
 
 const Links = [
   {
@@ -85,6 +86,17 @@ const Navbar = () => {
                   </Link>
                 </li>
               ))}
+              <li
+                className="max-lg:border-b border-gray-300 max-lg:py-3 lg:first:px-0 lg:px-3 flex items-center gap-2"
+                onClick={() => setShow(!show)}
+              >
+                <Text
+                  className={`lg:hidden hover:${currentTheme["text-500"]} block !text-slate-300 !text-xl`}
+                >
+                  Theme - 
+                </Text>
+                <ThemeChanger />
+              </li>
             </ul>
           </div>
 

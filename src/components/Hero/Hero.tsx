@@ -1,11 +1,11 @@
 "use client";
 import { Button, Container, Flex } from "@mantine/core";
-import Image from "next/image";
 import React from "react";
 import SocialIcons from "./SocialIcons";
 import Stats from "./Stats";
 import store from "@/hooks/store";
 import { themesStore } from "@/hooks/theme";
+import DiscloseImage from "../DiscloseImage";
 
 const Hero = () => {
   const theme = store((state) => state.theme);
@@ -52,12 +52,10 @@ const Hero = () => {
           </Flex>
           <Stats />
         </div>
-        <Image
+        <DiscloseImage
           src="/hero-profile.png"
-          alt="Shubham"
-          width={400}
-          height={400}
-          className="object-cover border-2 shadow-lg lg:mr-20 border-slate-100/20 rounded-xl shadow-slate-100/10 animate__animated animate__rubberBand"
+          alt="Profile image"
+          doorClassName={currentTheme["bg-100"]}
         />
       </Flex>
     </Container>
