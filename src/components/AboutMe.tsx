@@ -33,7 +33,7 @@ const AboutMe = () => {
           className="object-cover"
         />
         <ul
-          className={`max-w-xl space-y-5 text-xl ${currentTheme["text-300"]} drop-shadow-2xl`}
+          className={`max-w-xl space-y-5 text-xl lg:text-2xl ${currentTheme["text-300"]} rounded-xl font-medium [text-shadow:1px_1px_2px_rgba(0,0,0,1)]`}
         >
           <ScrollAnimation animateIn="animate__pulse">
             <li>
