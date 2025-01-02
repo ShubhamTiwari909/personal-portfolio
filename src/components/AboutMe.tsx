@@ -32,7 +32,9 @@ const AboutMe = () => {
           height={500}
           className="object-cover"
         />
-        <ul className="max-w-xl space-y-5 text-xl text-slate-300">
+        <ul
+          className={`max-w-xl space-y-5 text-xl ${currentTheme["text-300"]} drop-shadow-2xl`}
+        >
           <ScrollAnimation animateIn="animate__pulse">
             <li>
               Motivated Junior Frontend Developer with hands-on experience
